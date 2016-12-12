@@ -144,4 +144,8 @@
         <role>ZEPPELINUI</role>
         <url>http://zeppelin:9995</url>
     </service>
+    <service>
+        <role>AVATICA</role>
+        <url>http://avatica:8765</url>
+    </service>
 </topology>

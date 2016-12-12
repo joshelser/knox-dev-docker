@@ -1,0 +1,8 @@
+<rules>
+  <rule dir="IN" name="AVATICA/avatica/inbound/root" pattern="*://*:*/**/avatica/">
+    <rewrite template="{$serviceUrl[AVATICA]}/"/>
+  </rule>
+  <rule dir="IN" name="AVATICA/avatica/inbound/path" pattern="*://*:*/**/avatica/{**}">
+    <rewrite template="{$serviceUrl[AVATICA]}/{**}"/>
+  </rule>
+</rules>
