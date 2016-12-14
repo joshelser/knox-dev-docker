@@ -93,57 +93,18 @@
 
     </gateway>
 
-    <service>
-        <role>NAMENODE</role>
-        <url>hdfs://localhost:8020</url>
-    </service>
-
-    <service>
-        <role>JOBTRACKER</role>
-        <url>rpc://localhost:8050</url>
-    </service>
-
-    <service>
-        <role>WEBHDFS</role>
-        <url>http://localhost:50070/webhdfs</url>
-    </service>
-
-    <service>
-        <role>WEBHCAT</role>
-        <url>http://localhost:50111/templeton</url>
-    </service>
-
-    <service>
-        <role>OOZIE</role>
-        <url>http://localhost:11000/oozie</url>
-    </service>
-
-    <service>
-        <role>WEBHBASE</role>
-        <url>http://localhost:60080</url>
-    </service>
-
-    <service>
-        <role>HIVE</role>
-        <url>http://localhost:10001/cliservice</url>
-    </service>
-
-    <service>
-        <role>RESOURCEMANAGER</role>
-        <url>http://localhost:8088/ws</url>
-    </service>
-
-    <!-- SRM Zeppelin UI -->
+    <!-- Zeppelin  -->
 
     <service>
         <role>ZEPPELINWS</role>
         <url>ws://zeppelin:9995/ws</url>
     </service>
-
     <service>
         <role>ZEPPELINUI</role>
         <url>http://zeppelin:9995</url>
     </service>
+
+    <!-- Avatica/Phoenix -->
     <service>
         <role>AVATICA</role>
         <url>http://avatica:8765</url>
