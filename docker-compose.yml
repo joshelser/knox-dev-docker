@@ -11,12 +11,14 @@ services:
       - "8765:8765"
 
   knox:
-    image: joshelser/knox-gateway
+    image: joshelser/knox-gateway:0.10.0
     ports:
       - "8443:8443"
     volumes:
-      - ./topologies:/knox-0.10.0/conf/topologies
-      - ./avatica:/knox-0.10.0/data/services/avatica
+      - ./topologies:/knox/conf/topologies
+      - ./avatica:/knox/data/services/avatica
+      - ./keystores:/knox/data/security/keystores
+      - ./master:/knox/data/security/master
     depends_on:
       - avatica
       - ldap
