@@ -29,5 +29,5 @@ $ docker-compose up -d
 ## Connecting via sqlline
 
 ```
-$ docker run -v .../truststores/gateway.jks:/truststores/gateway.jks -it joshelser/sqlline https://hw10447.local:8443/gateway/sandbox/avatica /truststores/gateway.jks <your_keystore_password>
+$ docker run -v .../truststores/gateway.jks:/truststores/gateway.jks -it joshelser/sqlline https://$(hostname -f):8443/gateway/sandbox/avatica /truststores/gateway.jks <your_keystore_password>
 ```
