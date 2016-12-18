@@ -16,7 +16,7 @@ services:
       - "8443:8443"
     volumes:
       - ./topologies:/knox/conf/topologies
-      - ./avatica:/knox/data/services/avatica
+      - ./services:/knox/data/services
       - ./keystores:/knox/data/security/keystores
       - ./master:/knox/data/security/master
     depends_on:
