@@ -2,8 +2,8 @@ version: '2'
 
 services:
   ldap:
-    image: moresandeep/knox-dev:master
-    command: /ldap.sh
+    image: joshelser/knox-gateway:0.10.0
+    command: java -jar /knox/bin/ldap.jar /knox/conf
 
   avatica:
     image: joshelser/avatica-hsqldb:1.9.0
